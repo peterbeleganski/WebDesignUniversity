@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Booze Home</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        .less {
+            width: 70%;
+            height: 450px;
+        }
+        
+        .max {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Booze App</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Booze home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <h3>Contact Me</h3>
+            <p>I can answer questions if there are any :)</p>
+        </div>
+
+        <div class="container">
+            <h2>Contact me form</h2>
+            <form class="form-horizontal" action="/action_page.php">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Email:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">Send me a message:</label>
+                    <div class="col-sm-10">
+                        <textarea name="messga" class="form-control" placeholder="Enter your message" id="messageContact" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-success" id="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="tex-center">
+                    <p class="container text-muted"> Footer</p>
+                </h3>
+            </div>
+        </div>
+        <br>
+        <br>
+        <footer class="container jumbotron">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/solution.jpg" alt="solution" class="img img-responsive">
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="register.html">Register</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="contact.html">Contact me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+</body>
+
+</html>

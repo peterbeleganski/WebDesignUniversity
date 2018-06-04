@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Booze Home</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        .less {
+            width: 70%;
+            height: 450px;
+        }
+        
+        .max {
+            width: 100%;
+        }
+    </style>
+    <style type="text/css">
+        .form-style-9 {
+            max-width: 450px;
+            background: #FAFAFA;
+            padding: 30px;
+            margin: 50px auto;
+            box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+            border-radius: 10px;
+            border: 6px solid #305A72;
+        }
+        
+        .form-style-9 ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        
+        .form-style-9 ul li {
+            display: block;
+            margin-bottom: 10px;
+            min-height: 35px;
+        }
+        
+        .form-style-9 ul li .field-style {
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            padding: 8px;
+            outline: none;
+            border: 1px solid #B0CFE0;
+            -webkit-transition: all 0.30s ease-in-out;
+            -moz-transition: all 0.30s ease-in-out;
+            -ms-transition: all 0.30s ease-in-out;
+            -o-transition: all 0.30s ease-in-out;
+        }
+        
+        .form-style-9 ul li .field-style:focus {
+            box-shadow: 0 0 5px #B0CFE0;
+            border: 1px solid #B0CFE0;
+        }
+        
+        .form-style-9 ul li .field-split {
+            width: 49%;
+        }
+        
+        .form-style-9 ul li .field-full {
+            width: 100%;
+        }
+        
+        .form-style-9 ul li input.align-left {
+            float: left;
+        }
+        
+        .form-style-9 ul li input.align-right {
+            float: right;
+        }
+        
+        .form-style-9 ul li textarea {
+            width: 100%;
+            height: 100px;
+        }
+        
+        .form-style-9 ul li input[type="button"],
+        .form-style-9 ul li input[type="submit"] {
+            -moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+            -webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+            box-shadow: inset 0px 1px 0px 0px #3985B1;
+            background-color: #216288;
+            border: 1px solid #17445E;
+            display: inline-block;
+            cursor: pointer;
+            color: #FFFFFF;
+            padding: 8px 18px;
+            text-decoration: none;
+            font: 12px Arial, Helvetica, sans-serif;
+        }
+        
+        .form-style-9 ul li input[type="button"]:hover,
+        .form-style-9 ul li input[type="submit"]:hover {
+            background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+            background-color: #28739E;
+        }
+    </style>
+
+    <link rel="stylesheet" href="node_modules/intl-tel-input/src/css/intlTelInput.css">
+</head>
+
+<body onload="generateCaptcha()">
+
+    <script>
+        // click Register
+        function myFunction() {
+
+        }
+    </script>
+
+    <div class="container">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Booze App</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Booze home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="active"><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <h3>Register here</h3>
+            <button id="here" onclick="myFunction()">Click</button>
+        </div>
+        <form class="form-style-9" class="myform" id="myform">
+            <ul>
+                <strong>Name</strong>
+                <li>
+                    <input type="text" name="field1" class="field-style field-split align-left fname" placeholder="First" />
+                    <p><span class="emsgf hidden" style="color:red">Please Enter a Valid FirstName</span></p>
+                    <input type="email" name="field2" class="field-style field-split align-right lname" placeholder="Last" />
+                    <p><span class="emsgl hidden" style="color:red">Please Enter a Valid LastName</span></p>
+
+                </li>
+                <strong>Choose your username</strong>
+                <li>
+                    <input type="text" name="field3" class="field-style field-full align-none username" placeholder="Username" />
+                    <p><span class="emsgun hidden" style="color:red">Please Enter a Valid Username</span></p>
+                </li>
+                <strong>Create password</strong>
+                <li>
+                    <input type="password" name="field3" class="field-style field-full align-none pass" placeholder="Password" />
+                    <p><span class="emsgp hidden" style="color:red">Please Enter a Valid Password</span></p>
+                </li>
+                <strong>Confirm your password</strong>
+                <li>
+                    <input type="password" name="field3" class="field-style field-full align-none" placeholder="Password" />
+                </li>
+                <strong>BirthDay</strong>
+                <li>
+                    <input type="date" name="field3" class="field-style field-full align-none" placeholder="Date" />
+                </li>
+                <strong>Gender</strong>
+                <li>
+                    <select name="gender" id="" class="field-style field-full align-none">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                   </select>
+                </li>
+                <strong>Mobile Phone</strong>
+                <li>
+                    <input type="text" name="field3" class="field-style field-full align-none tel" value="+359" />
+                    <p><span class="emsgtel hidden" style="color:red">Please Enter a Valid Phone</span></p>
+                </li>
+                <strong>Your Current email address</strong>
+                <li>
+                    <input type="email" name="field3" class="field-style field-full align-none email" placeholder="Email" />
+                    <p><span class="emsgemail hidden" style="color:red">Please Enter a Valid Email</span></p>
+                </li>
+                <strong>Enter Captcha below</strong>
+                <li>
+                    <input type="text" name="field3" class="field-style field-full align-none" id="captcha" disabled />
+                </li>
+                <li>
+                    <input type="text" id="inputText" />
+
+                </li>
+                <li>
+                    <button onclick="generateCaptcha()">Refresh</button>
+                </li>
+
+                <li>
+                    <input type="submit" value="Send Message" />
+                </li>
+            </ul>
+        </form>
+
+        <script type="text/javascript" src="js/index.js"></script>
+        <!-- Footer -->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="tex-center">
+                    <p class="container text-muted"> Footer</p>
+                </h3>
+            </div>
+        </div>
+        <br>
+        <br>
+        <footer class="container jumbotron">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/solution.jpg" alt="solution" class="img img-responsive">
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="register.html">Register</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="contact.html">Contact me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            var captcha;
+
+            function generateCaptcha() {
+                var a = Math.floor((Math.random() * 10));
+                var b = Math.floor((Math.random() * 10));
+                var c = Math.floor((Math.random() * 10));
+                var d = Math.floor((Math.random() * 10));
+
+                captcha = a.toString() + b.toString() + c.toString() + d.toString();
+
+                document.getElementById("captcha").value = captcha;
+            }
+
+            function check() {
+                var input = document.getElementById("inputText").value;
+
+                if (input == captcha) {
+                    alert("Equal");
+                } else {
+                    alert("Not Equal");
+                }
+            }
+        </script>
+
+</body>
+
+</html>
